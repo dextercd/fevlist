@@ -42,3 +42,15 @@ idk
 ## Why?
 
 For grabbing event paths from Noita for mods.
+
+## Helper scripts
+
+The `all.sh` and `towikitable.py` scripts should make it easier to update the [Noita Sounds](https://noita.fandom.com/wiki/Modding:_List_of_Sounds) wiki page.
+
+Usage:
+
+```
+$ ed ./all.sh # (You'll probably need to change the hardcoded paths)
+$ ./all.sh >output
+$ python3 towikitable.py >wikioutput
+```
