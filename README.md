@@ -25,7 +25,7 @@ Building on Windows coming soon.
 Building requires `make` and a C++ compiler like `g++`.
 
 * Go to [the FMOD Download page](https://www.fmod.com/download) and sign in.
-* Click on "FMOD Studio Suite", scroll down to "FMOD Engine", click on "Older" and make sure "1.10.20 (Unsupported)" is selected in the list.
+* Click on "FMOD Studio Suite", scroll down to "FMOD Engine", click on "2.01" and make sure "2.01.05" is selected in the list.
 * Download the Linux archive.
 * Unpack this archive somewhere.
 * Go into the `fevlist` root directory with the `Makefile` and run `make CPU=... FMOD_STUDIO_PATH=... `, like so:
