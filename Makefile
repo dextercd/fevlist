@@ -26,4 +26,4 @@ LOWLEVEL_LIB = ${FMOD_STUDIO_PATH}/api/lowlevel/lib/${CPU}/libfmod${SUFFIX}.so
 STUDIO_LIB = ${FMOD_STUDIO_PATH}/api/studio/lib/${CPU}/libfmodstudio${SUFFIX}.so
 
 all:
-	${CXX} ${CXXFLAGS} -pthread -o ${NAME} fevlist.cpp -Wl,-rpath=\$$ORIGIN/$(dir ${LOWLEVEL_LIB}),-rpath=\$$ORIGIN/$(dir ${STUDIO_LIB}) ${LOWLEVEL_LIB} ${STUDIO_LIB} ${INCLUDE_DIRS}
+	${CXX} ${CXXFLAGS} -pthread -o ${NAME} fevlist.cpp -Wl,-rpath=$(dir ${LOWLEVEL_LIB}),-rpath=$(dir ${STUDIO_LIB}) ${LOWLEVEL_LIB} ${STUDIO_LIB} ${INCLUDE_DIRS}
