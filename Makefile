@@ -13,7 +13,8 @@ SOURCE_FILES = \
 
 INCLUDE_DIRS = \
     -I${FMOD_STUDIO_PATH}/api/lowlevel/inc \
-    -I${FMOD_STUDIO_PATH}/api/studio/inc
+    -I${FMOD_STUDIO_PATH}/api/studio/inc \
+    -I${FMOD_STUDIO_PATH}/api/core/inc
 
 ifdef DEBUG
     SUFFIX = L
@@ -22,7 +23,7 @@ else
     SUFFIX = 
 endif
 
-LOWLEVEL_LIB = ${FMOD_STUDIO_PATH}/api/lowlevel/lib/${CPU}/libfmod${SUFFIX}.so
+LOWLEVEL_LIB = ${FMOD_STUDIO_PATH}/api/core/lib/${CPU}/libfmod${SUFFIX}.so
 STUDIO_LIB = ${FMOD_STUDIO_PATH}/api/studio/lib/${CPU}/libfmodstudio${SUFFIX}.so
 
 all:
